@@ -98,6 +98,7 @@ justify-content: space-around;
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
+    height: 300px;
     overflow: visible !important;
 }
 
