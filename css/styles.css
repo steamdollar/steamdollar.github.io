@@ -90,6 +90,10 @@ justify-content: space-around;
 
 /*  project list */
 
+.container {
+    height : 1800px;
+}
+
 .project_box {
     display: flex;
     /* justify-content: space-around; */
@@ -99,7 +103,6 @@ justify-content: space-around;
 .project_image {
     height: 300px;
     width: 300px;
-    position:absolute !important;
 }
 
 .project_image >img {
