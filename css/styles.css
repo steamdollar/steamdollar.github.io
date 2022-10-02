@@ -102,8 +102,8 @@ justify-content: space-around;
 }
 
 .project_image >img {
-    height: 300px;
-    width: 300px;
+    height: 300px !important;
+    width: 300px !important;
 }
 
 .project_info {
