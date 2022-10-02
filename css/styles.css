@@ -99,6 +99,7 @@ justify-content: space-around;
 .project_image {
     height: 300px;
     width: 300px;
+    position:absolute;
 }
 
 .project_image >img {
