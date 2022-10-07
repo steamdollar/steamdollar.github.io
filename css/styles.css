@@ -52,10 +52,17 @@ body{font-family:'Lato', sans-serif;font-size:16px}body.active{overflow:hidden;z
 }
 
 .myInfo {
-width: 100%;
-display:flex;
-justify-content: space-around;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
 }
+
+/* .introduce {
+    font-size: 20px;
+    padding: 5% 0% 0% 2.5%;
+    position: absolute;
+    top: -0%;
+} */
 
 .profile_image {
     display:inline-block;
@@ -63,6 +70,7 @@ justify-content: space-around;
     margin-right : 5%;
     margin-left : 5%;
 }
+
 
 .informations {
     width: 70%;
@@ -76,10 +84,14 @@ justify-content: space-around;
 }
 
 .informations > div > ul > li {
-    margin: 6% 0 6% 0;
+    margin: 7% 0 7% 0;
 }
 
 #blog {
+    font-size: 92%;
+}
+
+#github {
     font-size: 92%;
 }
 
