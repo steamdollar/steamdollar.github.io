@@ -37,6 +37,19 @@
   }
   .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
 
+  /* experience & stack */
+  .exp{list-style:none}
+  .exp li{
+    color:var(--muted);font-size:15px;
+    padding:8px 0 8px 22px;position:relative;
+  }
+  .exp li::before{
+    content:"—";position:absolute;left:0;color:var(--accent);
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  .exp li+li{border-top:1px solid var(--line)}
+  .stackline{font-size:13.5px;color:var(--ink);letter-spacing:.01em}
+
   /* projects */
   .proj{
     background:var(--card);border:1px solid var(--line);border-radius:8px;
@@ -74,6 +87,19 @@
       in small teams.
     </p>
   </header>
+
+  <p class="eyebrow">// experience</p>
+
+  <ul class="exp">
+    <li>Backend Lead of a four-person team — code review as the merge gate, shared package design, implementation direction</li>
+    <li>Single-handedly consolidated two backend services into the base server, reducing an ERP from seven services to five</li>
+    <li>Rebuilt a legacy PHP/JS passenger reservation system as a maintainable Go service</li>
+    <li>Built cloud-to-ship WebSocket synchronization for a QR-based onboard operations platform on a newly launched vessel</li>
+  </ul>
+
+  <p class="eyebrow">// stack</p>
+
+  <p class="stackline mono">Go · TypeScript · Gin · PostgreSQL · Microsoft SQL Server · MariaDB · Redis · Docker · Azure</p>
 
   <p class="eyebrow">// projects</p>
 
