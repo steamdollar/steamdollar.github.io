@@ -1,0 +1,21 @@
+:root {
+  --bg: #f7f9fa;
+  --ink: #131c26;
+  --muted: #5a6b7c;
+  --accent: #0b4f8a;
+  --line: #dde4ea;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap
