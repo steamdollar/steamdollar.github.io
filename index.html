@@ -1,99 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lee Seung Jun — Backend Engineer</title>
-<meta name="description" content="Backend engineer in Seoul. Go, TypeScript, relational databases, cloud deployments.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#f7f9fa; --ink:#131c26; --muted:#5a6b7c;
-    --accent:#0b4f8a; --line:#dde4ea; --card:#ffffff;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  body{
-    background:var(--bg); color:var(--ink);
-    font:16px/1.65 "Inter",system-ui,sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:660px;margin:0 auto;padding:72px 24px 64px}
-  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
-
-  /* header */
-  h1{font:600 30px/1.2 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:-.02em}
-  .role{margin-top:10px;color:var(--accent);font-weight:500}
-  .lede{margin-top:18px;color:var(--muted);max-width:56ch}
-
-  /* section eyebrow styled as a code comment — quiet, engineer's-document register */
-  .eyebrow{
-    font-family:"IBM Plex Mono",ui-monospace,monospace;
-    font-size:13px;color:var(--muted);
-    margin:56px 0 18px;display:flex;align-items:center;gap:12px;
-  }
-  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
-
-  /* career & stack */
-  .job{margin-bottom:34px}
-  .job:last-of-type{margin-bottom:0}
-  .jobhead{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
-  .jobhead h2{font:600 18px/1.3 "IBM Plex Mono",ui-monospace,monospace}
-  .period{font-size:13px;color:var(--muted);white-space:nowrap}
-  .jobrole{margin-top:4px;color:var(--accent);font-size:14.5px;font-weight:500}
-  .edu{color:var(--muted);font-size:15px}
-  .edu strong{color:var(--ink);font-weight:600}
-  .exp{list-style:none;margin-top:10px}
-  .exp li{
-    color:var(--muted);font-size:15px;
-    padding:8px 0 8px 22px;position:relative;
-  }
-  .exp li::before{
-    content:"—";position:absolute;left:0;color:var(--accent);
-    font-family:"IBM Plex Mono",ui-monospace,monospace;
-  }
-  .exp li+li{border-top:1px solid var(--line)}
-  .stackline{font-size:13.5px;color:var(--ink);letter-spacing:.01em}
-
-  /* projects */
-  .proj{
-    background:var(--card);border:1px solid var(--line);border-radius:8px;
-    padding:22px 24px;margin-bottom:16px;
-  }
-  .proj h2{font:600 17px/1.3 "IBM Plex Mono",ui-monospace,monospace}
-  .proj h2 a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
-  .proj h2 a:hover,.proj h2 a:focus-visible{color:var(--accent);border-color:var(--accent)}
-  .stack{margin-top:6px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;color:var(--accent)}
-  .proj p{margin-top:10px;color:var(--muted);font-size:15px}
-
-  /* contact */
-  .links{display:flex;flex-wrap:wrap;gap:12px}
-  .links a{
-    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:14px;
-    color:var(--ink);text-decoration:none;
-    border:1px solid var(--line);border-radius:6px;padding:9px 16px;background:var(--card);
-  }
-  .links a:hover,.links a:focus-visible{border-color:var(--accent);color:var(--accent)}
-  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-
-  footer{margin-top:64px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lee Seung Jun — Backend Engineer</title>
+  <meta name="description" content="Backend engineer in Seoul working with Go, TypeScript, relational databases, and Azure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
 <main class="wrap">
+  <nav class="topbar mono" aria-label="Primary navigation">
+    <a class="brand" href="/">Lee Seung Jun</a>
+    <div class="nav">
+      <a href="/" aria-current="page">English</a>
+      <a href="/ko/">한국어</a>
+      <a href="/resume/">Résumés</a>
+    </div>
+  </nav>
 
   <header>
     <h1>Lee Seung Jun</h1>
     <p class="role mono">Backend Engineer · Go / TypeScript · Seoul</p>
     <p class="lede">
-      Most recently drove the backend of a maritime ERP modernization —
-      passenger, cargo, and onboard operations. Strongest in legacy system
-      modernization, API and data modeling, and leading backend workstreams
-      in small teams.
+      Most recently drove the backend of a maritime ERP modernization across
+      passenger reservations, cargo, and onboard operations. Strongest in legacy
+      modernization, API and data modeling, cloud infrastructure, and leading
+      backend workstreams in small teams.
     </p>
+    <div class="actions">
+      <a class="button primary" href="/resume/">View résumés</a>
+      <a class="button" href="/ko/">한국어 프로필</a>
+    </div>
   </header>
 
   <p class="eyebrow">// career</p>
@@ -105,11 +45,11 @@
     </div>
     <p class="jobrole">Backend Engineer → Backend Lead · maritime ERP for passenger, cargo, and onboard operations</p>
     <ul class="exp">
-      <li>Led a four-person backend team — code review as the merge gate, shared package design, implementation direction</li>
-      <li>Single-handedly consolidated two backend services into the base server, reducing the ERP from seven services to five</li>
-      <li>Rebuilt a legacy PHP/JS passenger reservation system as a maintainable Go service</li>
+      <li>Led a four-person backend team through code review, shared package design, and implementation direction</li>
+      <li>Consolidated two backend services into the base server, including database migration, reducing the ERP from seven services to five</li>
+      <li>Rebuilt a legacy PHP/JavaScript passenger reservation system as a maintainable Go service</li>
       <li>Built cloud-to-ship WebSocket synchronization for a QR-based onboard operations platform on a newly launched vessel</li>
-      <li>Provisioned the company's first cloud and container environment on Azure from scratch, and drove deployment automation from manual CLI to shell-script pipelines</li>
+      <li>Provisioned the company’s first Azure cloud and container environment and moved deployments from manual CLI runs to scripted pipelines</li>
     </ul>
   </section>
 
@@ -142,43 +82,29 @@
   </section>
 
   <p class="eyebrow">// stack</p>
-
-  <p class="stackline mono">Go · TypeScript · Gin · PostgreSQL · Microsoft SQL Server · MariaDB · Redis · Docker · Azure</p>
+  <p class="stackline mono">Go · TypeScript · Gin · PostgreSQL · Microsoft SQL Server · MariaDB · Redis · Docker · Azure · GitHub Actions</p>
 
   <p class="eyebrow">// projects</p>
 
   <article class="proj">
     <h2><a href="https://github.com/steamdollar/copylingo">copylingo</a></h2>
     <p class="stack">Go · Gin · PostgreSQL · Redis · Docker · Gemini API</p>
-    <p>
-      A Japanese-learning Telegram bot I build and use daily: study material
-      management, generated exercises, grading, and review flows.
-      ORM-free data layer, 50+ test files.
-    </p>
+    <p>A Japanese-learning Telegram bot I build and use daily: study material management, generated exercises, grading, and review flows. SQL-first data layer with sqlx and 50+ test files.</p>
   </article>
 
   <article class="proj">
     <h2><a href="https://github.com/steamdollar/browserToolkit">browserToolkit</a></h2>
     <p class="stack">Chrome Extension · JavaScript</p>
-    <p>
-      A developer utility I use for day-to-day inspection and debugging:
-      Base64/JWT decoding, lightweight HTTP API testing, Mermaid preview,
-      and small workflow tools.
-    </p>
+    <p>A developer utility for day-to-day inspection and debugging: Base64/JWT decoding, lightweight HTTP API testing, Mermaid preview, notes, and small workflow tools.</p>
   </article>
 
   <p class="eyebrow">// contact</p>
-
   <nav class="links" aria-label="Contact links">
-    <a href="https://github.com/steamdollar">GitHub</a>
-    <!-- TODO: LinkedIn URL 확정 후 주석 해제
-    <a href="https://www.linkedin.com/in/YOUR_HANDLE">LinkedIn</a>
-    -->
-    <a href="mailto:loerain111@gmail.com">Email</a>
+    <a class="button" href="https://github.com/steamdollar">GitHub</a>
+    <a class="button" href="mailto:loerain111@gmail.com">Email</a>
   </nav>
 
   <footer>© 2026 Lee Seung Jun</footer>
-
 </main>
 </body>
 </html>
