@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이승준 — 백엔드 엔지니어</title>
+  <meta name="description" content="Go와 TypeScript를 중심으로 해운·여객 ERP와 Azure 인프라를 구축한 백엔드 엔지니어 이승준의 포트폴리오입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<main class="wrap">
+  <nav class="topbar mono" aria-label="주요 메뉴">
+    <a class="brand" href="/ko/">이승준</a>
+    <div class="nav">
+      <a href="/">English</a>
+      <a href="/ko/" aria-current="page">한국어</a>
+      <a href="/resume/">이력서</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>이승준</h1>
+    <p class="role mono">Backend Engineer · Go / TypeScript · Seoul</p>
+    <p class="lede">
+      Go 기반 백엔드와 Azure 인프라를 중심으로 해운·여객 ERP 현대화를 수행했습니다.
+      레거시 예약 시스템 재구축, 복잡한 운영 도메인 모델링, 외부 시스템 연동,
+      클라우드–선내 통신 구조 구현과 소규모 백엔드 팀의 기술 리딩 경험이 있습니다.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="/resume/">이력서 보기</a>
+      <a class="button" href="/">English profile</a>
+    </div>
+  </header>
+
+  <p class="eyebrow">// 경력</p>
+
+  <section class="job">
+    <div class="jobhead">
+      <h2>아로아랩스</h2>
+      <span class="period mono">2024 – 2026</span>
+    </div>
+    <p class="jobrole">Backend Engineer → Backend Lead · 여객·화물·선내 운영을 포함한 해운 ERP</p>
+    <ul class="exp">
+      <li>4명 규모 백엔드 팀에서 코드 리뷰, 공통 패키지 설계, 구현 방향 결정을 담당</li>
+      <li>독립 서비스 2개를 기본 서버로 통합하고 DB 마이그레이션을 수행해 ERP 서비스를 7개에서 5개로 축소</li>
+      <li>레거시 PHP/JavaScript 여객 예약 시스템을 유지보수 가능한 Go 서비스로 재구축</li>
+      <li>신규 선박의 QR 기반 선내 운영 플랫폼을 위해 클라우드–선내 WebSocket 동기화 구조 구현</li>
+      <li>회사의 첫 Azure 클라우드·컨테이너 환경을 구축하고 수동 CLI 배포를 스크립트 기반 파이프라인으로 전환</li>
+    </ul>
+  </section>
+
+  <section class="job">
+    <div class="jobhead">
+      <h2>nPortVerse</h2>
+      <span class="period mono">2022 – 2024</span>
+    </div>
+    <p class="jobrole">Backend Engineer · 블록체인 연구 조직에서 Node.js / TypeScript 기반 백엔드 서비스 개발</p>
+  </section>
+
+  <p class="eyebrow">// 학력</p>
+
+  <section class="job">
+    <div class="jobhead">
+      <h2>고려대학교</h2>
+      <span class="period mono">2014.03 – 2020.02</span>
+    </div>
+    <p class="jobrole">화학과 학사 · 서울 — 군 휴학 포함</p>
+  </section>
+
+  <p class="eyebrow">// 병역</p>
+
+  <section class="job">
+    <div class="jobhead">
+      <h2>대한민국 육군 카투사</h2>
+      <span class="period mono">2016.12 – 2018.09</span>
+    </div>
+    <p class="jobrole">미 육군 부대 근무 · 영어 업무 환경</p>
+  </section>
+
+  <p class="eyebrow">// 기술</p>
+  <p class="stackline mono">Go · TypeScript · Gin · PostgreSQL · Microsoft SQL Server · MariaDB · Redis · Docker · Azure · GitHub Actions</p>
+
+  <p class="eyebrow">// 프로젝트</p>
+
+  <article class="proj">
+    <h2><a href="https://github.com/steamdollar/copylingo">copylingo</a></h2>
+    <p class="stack">Go · Gin · PostgreSQL · Redis · Docker · Gemini API</p>
+    <p>직접 매일 사용하는 일본어 학습 Telegram 봇입니다. 학습 자료 관리, 문제 생성, 채점, 복습 흐름을 구현했고 sqlx 기반 데이터 계층과 50개 이상의 테스트 파일을 갖추고 있습니다.</p>
+  </article>
+
+  <article class="proj">
+    <h2><a href="https://github.com/steamdollar/browserToolkit">browserToolkit</a></h2>
+    <p class="stack">Chrome Extension · JavaScript</p>
+    <p>Base64/JWT 디코딩, 간단한 HTTP 요청, Mermaid 미리보기, 노트 등 개발 중 반복해서 필요했던 도구를 모은 Chrome 확장 프로그램입니다.</p>
+  </article>
+
+  <p class="eyebrow">// 연락처</p>
+  <nav class="links" aria-label="연락처 링크">
+    <a class="button" href="https://github.com/steamdollar">GitHub</a>
+    <a class="button" href="mailto:loerain111@gmail.com">Email</a>
+  </nav>
+
+  <footer>© 2026 Lee Seung Jun</footer>
+</main>
+</body>
+</html>
